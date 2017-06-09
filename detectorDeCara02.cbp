@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="detectorDeCara02" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons\;src\;addons\ofxCv\libs\ofxCv\src\;addons\ofxFaceTracker\src\;addons\ofxFaceTracker\libs\FaceTracker\include\FaceTracker\;addons\ofxCv\libs\ofxCv\include\ofxCv\;addons\ofxCv\src\;addons\ofxFaceTracker\libs\FaceTracker\src\lib\;addons\ofxCv\libs\CLD\src\;addons\ofxCv\libs\CLD\include\CLD\;" />
+		<Build>
+			<Target title="release">
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib" />
+				</Linker>
+			</Target>
+			<Target title="debug">
+				<Option output="bin/$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wno-multichar" />
+			<Add directory="../../../libs/glu/include" />
+			<Add directory="../../../libs/freetype/include" />
+			<Add directory="../../../libs/freetype/include/freetype2" />
+			<Add directory="../../../libs/FreeImage/include" />
+			<Add directory="../../../libs/quicktime/include" />
+			<Add directory="../../../libs/rtAudio/include" />
+			<Add directory="../../../libs/fmodex/include" />
+			<Add directory="../../../libs/videoInput/include" />
+			<Add directory="../../../libs/glew/include" />
+			<Add directory="../../../libs/glut/include" />
+			<Add directory="../../../libs/glfw/include" />
+			<Add directory="../../../libs/openFrameworks" />
+			<Add directory="../../../libs/openFrameworks/3d" />
+			<Add directory="../../../libs/openFrameworks/app" />
+			<Add directory="../../../libs/openFrameworks/communication" />
+			<Add directory="../../../libs/openFrameworks/events" />
+			<Add directory="../../../libs/openFrameworks/gl" />
+			<Add directory="../../../libs/openFrameworks/graphics" />
+			<Add directory="../../../libs/openFrameworks/math" />
+			<Add directory="../../../libs/openFrameworks/sound" />
+			<Add directory="../../../libs/openFrameworks/types" />
+			<Add directory="../../../libs/openFrameworks/utils" />
+			<Add directory="../../../libs/openFrameworks/video" />
+			<Add directory="../../../libs/poco/include" />
+			<Add directory="../../../libs/tess2/include" />
+			<Add directory="../../../libs/cairo/include/cairo" />
+			<Add directory="../../../addons/ofxCv/libs" />
+			<Add directory="../../../addons/ofxCv/src" />
+			<Add directory="../../../addons/ofxCv/libs/CLD" />
+			<Add directory="../../../addons/ofxCv/libs/CLD/include" />
+			<Add directory="../../../addons/ofxCv/libs/CLD/include/CLD" />
+			<Add directory="../../../addons/ofxCv/libs/CLD/src" />
+			<Add directory="../../../addons/ofxCv/libs/ofxCv" />
+			<Add directory="../../../addons/ofxCv/libs/ofxCv/include" />
+			<Add directory="../../../addons/ofxCv/libs/ofxCv/include/ofxCv" />
+			<Add directory="../../../addons/ofxCv/libs/ofxCv/src" />
+			<Add directory="../../../addons/ofxFaceTracker/libs" />
+			<Add directory="../../../addons/ofxFaceTracker/src" />
+			<Add directory="../../../addons/ofxFaceTracker/libs/FaceTracker" />
+			<Add directory="../../../addons/ofxFaceTracker/libs/FaceTracker/include" />
+			<Add directory="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+			<Add directory="../../../addons/ofxFaceTracker/libs/FaceTracker/model" />
+			<Add directory="../../../addons/ofxFaceTracker/libs/FaceTracker/src" />
+			<Add directory="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+			<Add directory="../../../addons/ofxOpenCv/libs/opencv/include" />
+
+<Add directory="../../../addons/ofxXmlSettings/libs" />
+			<Add directory="../../../addons/ofxXmlSettings/src" />
+			<Add directory="../../../addons\ofxXmlSettings\libs" />
+			<Add directory="../../../addons\ofxXmlSettings\src" />
+
+		</Compiler>
+		<Linker>
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_objdetect231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_calib3d231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_features2d231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_imgproc231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_core231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_contrib231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_flann231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_gpu231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_haartraining_engine.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_highgui231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_legacy231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_ml231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_ts231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libopencv_video231.a" />
+			<Add library="..\..\..\addons\ofxOpenCv\libs\opencv\lib\win_cb\libzlib.a" />
+			<Add library="..\..\..\libs\FreeImage\lib\win_cb\FreeImage.lib" />
+			<Add library="..\..\..\libs\rtAudio\lib\win_cb\librtaudio.a" />
+			<Add library="..\..\..\libs\quicktime\lib\win_cb\qtmlClient.lib" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libcairo.a" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libpixman-1.a" />
+			<Add library="..\..\..\libs\freetype\lib\win_cb\libfreetype.a" />
+			<Add library="..\..\..\libs\glut\lib\win_cb\libglut.a" />
+			<Add library="..\..\..\libs\glfw\lib\win_cb\libglfw3.a" />
+			<Add library="..\..\..\libs\videoInput\lib\win_cb\videoInputLib.a" />
+			<Add library="..\..\..\libs\fmodex\lib\win_cb\libfmodex.a" />
+			<Add library="..\..\..\libs\glew\lib\win_cb\glew32s.lib" />
+			<Add library="..\..\..\libs\glu\lib\win_cb\glu32.lib" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNetSSL.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoCrypto.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNet.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoUtil.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoXML.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoFoundation.a" />
+			<Add library="..\..\..\libs\openssl\lib\win_cb\libssl.a" />
+			<Add library="..\..\..\libs\openssl\lib\win_cb\libcrypto.a" />
+			<Add library="..\..\..\libs\tess2\lib\win_cb\libtess2.a" />
+			<Add library="opengl32" />
+			<Add library="gdi32" />
+			<Add library="msimg32" />
+			<Add library="glu32" />
+			<Add library="dsound" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="strmbase" />
+			<Add library="strmiids" />
+			<Add library="z" />
+			<Add library="uuid" />
+			<Add library="ole32" />
+			<Add library="oleaut32" />
+			<Add library="setupapi" />
+			<Add library="wsock32" />
+			<Add library="ws2_32" />
+			<Add library="Iphlpapi" />
+			<Add library="Comdlg32" />
+		</Linker>
+		<ExtraCommands>
+			<Add after='xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;' />
+			<Add after='cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;' />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="../../../addons/ofxCv/libs/CLD/include/CLD/ETF.h">
+			<Option virtualFolder="addons/ofxCv/libs/CLD/include/CLD" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/CLD/include/CLD/fdog.h">
+			<Option virtualFolder="addons/ofxCv/libs/CLD/include/CLD" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/CLD/include/CLD/imatrix.h">
+			<Option virtualFolder="addons/ofxCv/libs/CLD/include/CLD" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/CLD/include/CLD/myvec.h">
+			<Option virtualFolder="addons/ofxCv/libs/CLD/include/CLD" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/CLD/src/ETF.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/CLD/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/CLD/src/fdog.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/CLD/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Calibration.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/ContourFinder.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Distance.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Flow.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Helpers.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Kalman.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/ObjectFinder.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/RunningBackground.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Tracker.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Utilities.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Wrappers.h">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/include/ofxCv" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/Calibration.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/ContourFinder.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/Distance.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/Flow.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/Helpers.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/Kalman.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/ObjectFinder.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/RunningBackground.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/Tracker.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/Utilities.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/libs/ofxCv/src/Wrappers.cpp">
+			<Option virtualFolder="addons/ofxCv/libs/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxCv/src/ofxCv.h">
+			<Option virtualFolder="addons/ofxCv/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker/CLM.h">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker/FCheck.h">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker/FDet.h">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker/IO.h">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker/PAW.h">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker/PDM.h">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker/Patch.h">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker/Tracker.h">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/include/FaceTracker" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib/CLM.cc">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib/FCheck.cc">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib/FDet.cc">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib/IO.cc">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib/PAW.cc">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib/PDM.cc">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib/Patch.cc">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/libs/FaceTracker/src/lib/Tracker.cc">
+			<Option virtualFolder="addons/ofxFaceTracker/libs/FaceTracker/src/lib" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/src/Expression.cpp">
+			<Option virtualFolder="addons/ofxFaceTracker/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/src/Expression.h">
+			<Option virtualFolder="addons/ofxFaceTracker/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/src/ExpressionClassifier.cpp">
+			<Option virtualFolder="addons/ofxFaceTracker/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/src/ExpressionClassifier.h">
+			<Option virtualFolder="addons/ofxFaceTracker/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/src/ofxFaceTracker.cpp">
+			<Option virtualFolder="addons/ofxFaceTracker/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/src/ofxFaceTracker.h">
+			<Option virtualFolder="addons/ofxFaceTracker/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxFaceTracker/src/ofxFaceTrackerThreaded.h">
+			<Option virtualFolder="addons/ofxFaceTracker/src" />
+		</Unit>
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/efectoBase.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/efectoBase.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/efectoCabezaRebotante.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/efectoCabezaRebotante.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/efectoEspejoDeTiza.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/efectoEspejoDeTiza.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/ofApp.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/ofApp.h">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/recortadorImagenCara.cpp" />
+		<Unit filename="src/recortadorImagenCara.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+
+<Unit filename="../../../addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
+			<Option virtualFolder="addons\ofxXmlSettings\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxXmlSettings\src\ofxXmlSettings.h">
+			<Option virtualFolder="addons\ofxXmlSettings\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxXmlSettings\libs\tinyxml.cpp">
+			<Option virtualFolder="addons\ofxXmlSettings\libs" />
+		</Unit>
+		<Unit filename="../../../addons\ofxXmlSettings\libs\tinyxml.h">
+			<Option virtualFolder="addons\ofxXmlSettings\libs" />
+		</Unit>
+		<Unit filename="../../../addons\ofxXmlSettings\libs\tinyxmlerror.cpp">
+			<Option virtualFolder="addons\ofxXmlSettings\libs" />
+		</Unit>
+		<Unit filename="../../../addons\ofxXmlSettings\libs\tinyxmlparser.cpp">
+			<Option virtualFolder="addons\ofxXmlSettings\libs" />
+		</Unit>
+	
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,30 @@
+<ROBACARAS>
+	<DEBUG_MODE>0</DEBUG_MODE>
+	<CAMARA>
+		<DISPOSITIVO>0</DISPOSITIVO>
+	</CAMARA>	
+	<DESTINO>
+		<PATH>caras</PATH>
+	</DESTINO>
+	<CAPTURA>
+		<ANCHO>640</ANCHO>
+		<ALTO>480</ALTO>
+		<ROTACION>0</ROTACION>
+	</CAPTURA>
+	<FONT>
+		<FILENAME>arial.ttf</FILENAME>
+		<SIZE>10</SIZE>
+	</FONT>
+	<CARA>
+		<MIN_WIDTH>100</MIN_WIDTH>
+		<MIN_BIG_WIDTH>260</MIN_BIG_WIDTH>
+		<ROTACION>0</ROTACION>
+	</CARA>
+	<MENSAJE>
+		<LARGO_PORCION>40</LARGO_PORCION>
+		<PERIODO_PORCION>3</PERIODO_PORCION>
+		<TEXTO>
+Si el rostro es una politica, deshacer el rostro tambien es otra política, que provoca los devenires reales, todo un devenir clandestino. Deshacer el rostro es lo mismo que traspasar la pared del significante, salir del agujero negro de la subjetividad. El programa, el slogan del esquizoanalisis deviene ahora: buscad vuestros agujeros negros y vuestras paredes blancas, conocedlos, conoced vuestros rostros, esa es la unica forma de deshacerlos, de trazar vuestras lineas de fuga […] las maquinas de rostro son claramente callejones sin salida, la medida de nuestras sumisiones, de nuestras sujeciones; pero en medio de todo eso hemos nacido, y con ello debemos debatirnos […] puesto que es producido por una maquina y por las exigencias de un aparato de poder especial que la desencadena, que lleva la desterritorializacion al absoluto, pero manteniendolo negativo. Pero caiamos en la nostalgia del retorno o de la regresion, cuando oponiamos la cabeza humana, espiritual y primitiva, al rostro humano. En verdad solo hay inhumanidades, el hombre solo esta hecho de inhumanidades, pero muy diferentes, y segun naturalezas y a velocidades muy diferentes. (Deleuze y Guattari, 1985: 192-194)
+		</TEXTO>
+	</MENSAJE>
+</ROBACARAS>
